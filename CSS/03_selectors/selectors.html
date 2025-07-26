@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Example</title>
+    <style>
+      /* Universal Selector -- most of the time we have to flush pre defined browser designing*/
+       *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+       }
+      /* Type Selector  */
+       p{
+          font-size: 16px;
+          margin-bottom: 10px;
+          /* in clockwise direction  */
+          /* margin: 10px 20px 10px 20px; */
+          /* padding: 1px 2px 3px; */
+       }
+       /* Class Selector */
+       .highlight{
+        background-color: #21a29c;
+       }
+      
+       /* ID Selector */
+       /* one unique id on one webpage */
+       #header{
+          background-color: #4026b4;
+
+       }
+       /* Attribute Selector */
+       input[type = "text"]{
+        border: 1px solid #a22a21
+       }
+       /* Descendent Selector (read it from right to left)*/
+       /*  all  the p that are descendent of article */
+       article p{
+         font-style: italic;
+         background-color: #22a4a8;
+         color: #fff
+       }
+
+       /* Child Selector (only childs) */
+       div > p {
+         list-style-type: square;
+         background-color: orange ;
+       }
+       /* Adjacent Sibling Selector */
+       h1 + p {
+         font-weight: Bold;
+       }
+       /* General sibling selector */
+      h2 ~ p {
+        color: #a326b4;
+      }
+      /* Pseudo-Class Selector */
+      /* It lets you apply styles when something special happens to an element — like when the user hovers, clicks, or when the element is the first child.  */
+      a:hover{
+        background-color: antiquewhite;
+        text-decoration: none;
+        color: rgb(248, 224, 8);
+        padding: 5px;
+        margin: 4px;
+      }
+      /* Pseudo-element selector */
+      p::first-letter{
+        font-weight: bold;
+        font-size: 30px;
+      }
+      /* Grouping Selector */
+      h1,h2,h3{
+        color: rgb(51, 255, 0);
+      }
+
+</style>
+  </head>
+  <body>
+    <header id="header">This is the header</header>
+
+    <h1>Main Heading</h1>
+    <p>
+      This paragraph is adjacent to h1 and demonstrates the adjacent sibling
+      selector.
+    </p>
+    <p>This is a regular paragraph showing the type selector.</p>
+
+    <p class="highlight">
+      This paragraph has a highlight class, demonstrating the class selector.
+    </p>
+
+    <input type="text" placeholder="Enter text here" />
+
+    <article>
+      <p>
+        This paragraph is inside an article, showing the descendant selector.
+      </p>
+      <p>
+        This paragraph is inside an article, showing the descendant selector.
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum,
+          debitis.
+        </p>
+      </div>
+    </article>
+
+    <div>
+      <p>I am a Child</p>
+      <p>I am a Child</p>
+      <section>
+        <p>I am a Descendant</p>
+      </section>
+      <p>I am a Child</p>
+    </div>
+
+    <h2>Sub Heading</h2>
+    <p>
+      This is a sibling paragraph to h2, demonstrating the general sibling
+      selector.
+    </p>
+    <div>This is a sibling div to h2.</div>
+    <p>This is another sibling paragraph to h2.</p>
+
+    <a href="#">Hover over me to see the pseudo-class selector in action</a>
+
+    <p>
+      This paragraph demonstrates pseudo-element selectors with a styled first
+      line and first letter.
+    </p>
+
+    <h3>Heading 3</h3>
+
+    <p>
+      The headings h1, h2, and h3 use the grouping selector for consistent font
+      family.
+    </p>
+  </body>
+</html>
