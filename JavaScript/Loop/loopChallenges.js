@@ -24,7 +24,7 @@ while (j >= 1 ){
    countdown.push(j)
     j--
 }
-// console.log(countdown)
+console.log(countdown)
 
 /* 
 3. Write a 'do-while' loop that prompts a user to enter 
@@ -32,16 +32,16 @@ their favourite tea type until they enter "stop".
 Store each tea type in an array named 'teaCollection'
 */
 
-// let teaCollection = []
-// let tea
+let teaCollection = []
+let tea
 
-// do {
-//   tea = prompt(`Enter your favourite tea type ()`)    
-// //  prompt runs in browser
-//   if ( tea !== "stop" ){
-//     teaCollection.push(tea)
-//   }
-// } while ( tea !== "stop" )
+do {
+  tea = prompt(`Enter your favourite tea type ()`)    
+//  prompt runs in browser
+  if ( tea !== "stop" ){
+    teaCollection.push(tea)
+  }
+} while ( tea !== "stop" )
 
 /*
 4. Write a "do-while" loop that adds numbers from 1 to 3
@@ -57,7 +57,7 @@ do {
     
 } while (k <= 3);
 
-// console.log(total)
+console.log(total)
 
 /*
 5. Write a 'for' loop that multiplies each element in the array '[2,4,6]'
@@ -71,7 +71,7 @@ for (let i= 0; i < numbers.length; i++) {
     multipliedNumbers[i] = numbers[i] * 2
 }
 
-// console.log(multipliedNumbers)
+console.log(multipliedNumbers)
 
 /* 
 6. Write a 'for' loop that lists all the cities in 
