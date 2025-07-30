@@ -31,8 +31,8 @@
    let citiesVisited = ["Mumbai" , "Sydney"]
    // .push append elements to end of array
    cities.push("Berlin")
-   // console.log(citiesVisited.length)
-   // citiesVisited[2] = "Berlin"   
+   console.log(citiesVisited.length)
+   citiesVisited[2] = "Berlin"   
 
 /* 
 5. You have an array named `teaOrders` with `"chai"`, `"iced tea"`, `"matcha"`, and `"earl grey"`. 
@@ -42,7 +42,7 @@
   let teadOrders = ["chai" , "iced tea" , "matcha" , "earl grey"]
  // pop  removes last element from array 
   const lastorder = teadOrders.pop()
-//   console.log(lastorder);
+  console.log(lastorder);
 
 /* 
 6. You have an array named `popularTeas` containing `"green tea"`, `"oolong tea"`, and `"chai"`. 
@@ -59,8 +59,8 @@ No new copy of the actual data is created.
 */
 
   popularTeas.pop()
-//   console.log(softCopyTeas)
-//   console.log(popularTeas)
+  console.log(softCopyTeas)
+  console.log(popularTeas)
   
 /* 
 7. You have an array named `topCities` containing `"Berlin"`, `"Singapore"`, and `"New York"`. 
@@ -70,7 +70,7 @@ No new copy of the actual data is created.
  let topCities = ["Berlin" ,"Singapore", "New york"]
  let hardCopyCities = [...topCities]
  topCities.pop()
-//  console.log(hardCopyCities)
+ console.log(hardCopyCities)
 
   /* Creates a shallow copy of topCities using the spread operator
   The ... (spread operator) unpacks the elements of topCities into a new array,
@@ -87,7 +87,7 @@ No new copy of the actual data is created.
    let asianCities = ["Tokyo" , "Bangkok"]
    let worldCities = europeanCities.concat(asianCities)
 
-   // console.log(worldCities)
+   console.log(worldCities)
 
 /* 
 9. You have an array named `teaMenu` containing `"masala chai"`, `"oolong tea"`, `"green tea"`, and `"earl grey"`. 
