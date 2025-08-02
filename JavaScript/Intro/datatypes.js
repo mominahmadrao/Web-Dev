@@ -28,12 +28,8 @@ let name = "Momin";
 let isLoggedin = false;
 
 // object
-let teaTypes = ["lemontea","orange tea" , "oolong tea "];
-let user = { firstname:"momin" , lastname:"ahmad"};
-
+let teaTypes = ["lemontea", "orange tea", "oolong tea "];
+let user = { firstname: "momin", lastname: "ahmad" };
 
 let getScore = score;
 console.log(getScore);
-
-
-
