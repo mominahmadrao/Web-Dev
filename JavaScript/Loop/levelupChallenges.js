@@ -16,7 +16,7 @@ for (let i = 0; i < teas.length; i++) {
   selectedTeas.push(teas[i]);
 }
 
-console.log(selectedTeas)
+console.log(selectedTeas);
 
 /* 
 2. Write a 'for' loop that loops through the array 
@@ -35,7 +35,7 @@ for (let i = 0; i < cities.length; i++) {
   visitedCities.push(cities[i]);
 }
 
-console.log(visitedCities)
+console.log(visitedCities);
 
 /* 
 3. User a 'for-of' loop to iterate through the array `[1,2,3,4,5,6]' and stop when 
@@ -73,7 +73,7 @@ for (const tea of teaTypes) {
   perferredTeas.push(tea);
 }
 
-console.log(perferredTeas)
+console.log(perferredTeas);
 
 /*
 5. Use a 'for-in' loop to loop through an object containing city 
@@ -108,7 +108,7 @@ for (const city in citiesPopulation) {
   cityNewPopulation[city] = citiesPopulation[city];
 }
 
-console.log(cityNewPopulation)
+console.log(cityNewPopulation);
 
 /* 
 6. Use a 'for-in' loop to loop through 
@@ -138,7 +138,7 @@ for (const city in worldCities) {
   }
   largeCities[city] = worldCities[city];
 }
-console.log(largeCities)
+console.log(largeCities);
 
 /* 
 7. Write a 'ForEach' loop that iterates through the array
@@ -167,17 +167,17 @@ console.log(availableTeas);
   'traveledCities'
 */
 
-let myworldCities = ["Berlin" , "Tokyo" , "Sydney" , "Paris"]
-let traveledCities = [ ]
+let myworldCities = ["Berlin", "Tokyo", "Sydney", "Paris"];
+let traveledCities = [];
 
-myworldCities.forEach( city =>  {
-   if (city === "Sydney") {
-      return
-   }
-   traveledCities.push(city)
-})
+myworldCities.forEach((city) => {
+  if (city === "Sydney") {
+    return;
+  }
+  traveledCities.push(city);
+});
 
-console.log(traveledCities)
+console.log(traveledCities);
 
 /* 
 9. Write a 'for' loop iterates through the array '[2,5,7,9]'.
@@ -185,17 +185,17 @@ console.log(traveledCities)
    a new array named 'doubleNumbers'.
 */
 
-let num = [2,5,7,9]
-let doubleNumbers = []
+let num = [2, 5, 7, 9];
+let doubleNumbers = [];
 
 for (let i = 0; i < num.length; i++) {
-   if ( num[i] == 7 ){
-      continue
-   }
-   doubleNumbers.push(num[i] * 2)
+  if (num[i] == 7) {
+    continue;
+  }
+  doubleNumbers.push(num[i] * 2);
 }
 
-console.log(doubleNumbers)
+console.log(doubleNumbers);
 
 /* 
 10 . Use a 'for-loop' to iterate through the array
@@ -205,14 +205,14 @@ console.log(doubleNumbers)
   Store the teas iterated over in an array named 'shortTeas'
 */
 
-let myTea =  ["chai" , "green tea" , "black tea" , "jasmine tea"]
-let shortTeas = []
+let myTea = ["chai", "green tea", "black tea", "jasmine tea"];
+let shortTeas = [];
 
 for (const tea of myTea) {
-   if ( tea.length > 10 ) {
-       break
-   }
-   shortTeas.push(tea)
+  if (tea.length > 10) {
+    break;
+  }
+  shortTeas.push(tea);
 }
 
-console.log(shortTeas)
+console.log(shortTeas);
