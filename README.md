@@ -1,17 +1,12 @@
-# Web Development Journey
+### Web Development Journey
 
-This repo documents the learning of basics of  Web Dev
+This repo documents the learning of basics of Web Dev
 
----
----
 
-### Purpose
+## Purpose
 
 This repository is made for:
 
 - Practicing front-end skills
 - Documenting progress
 - Building a strong foundation in web development
-
----
-
